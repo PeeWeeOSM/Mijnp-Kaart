@@ -1094,7 +1094,7 @@
       ],
       "layout": {"line-join": "round"},
       "paint": {
-        "line-color": "red)",
+        "line-color": "hsl(0,0%,100%)",
         "line-dasharray": [1, 0.7],
         "line-width": [
           "interpolate",
