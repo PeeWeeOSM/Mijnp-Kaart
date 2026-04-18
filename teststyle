@@ -246,7 +246,7 @@
       "source": "openmaptiles",
       "source-layer": "water",
       "filter": ["!=", ["get", "brunnel"], "tunnel"],
-      "paint": {"fill-color": "black"}
+      "paint": {"fill-color": "rgba(250, 11, 110, 1)"}
     },
     {
       "id": "landcover_sand",
@@ -892,35 +892,6 @@
         ]
       }
     },
-{
-  "id": "road-bicycle-no-highlight",
-  "type": "line",
-  "source": "openmaptiles",
-  "source-layer": "transportation",
-  "minzoom": 5,
-  "maxzoom": 24,
-  "filter": [
-    "all",
-    ["==", ["get", "bicycle"], "no"],
-    ["in", ["get", "class"], "motorway","trunk","primary","secondary","tertiary","unclassified","residential","service","road","living_street"]
-  ],
-  "layout": {
-    "line-join": "round",
-    "line-cap": "round"
-  },
-  "paint": {
-    "line-color": "#ff0000",
-    "line-width": [
-      "interpolate",
-      ["linear"],
-      ["zoom"],
-      10, 1,
-      14, 2.5,
-      18, 6
-    ],
-    "line-opacity": 1
-  }
-}
     {
       "id": "road_service_track_casing",
       "type": "line",
