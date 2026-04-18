@@ -246,7 +246,7 @@
       "source": "openmaptiles",
       "source-layer": "water",
       "filter": ["!=", ["get", "brunnel"], "tunnel"],
-      "paint": {"fill-color": "rgba(250, 11, 110, 1)"}
+      "paint": {"fill-color": "black"}
     },
     {
       "id": "landcover_sand",
