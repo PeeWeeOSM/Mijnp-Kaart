@@ -30,9 +30,18 @@
       "paint": {
         "fill-color": {
           "stops": [
-            [7, "hsl(0, 0%, 82%)"],
-            [11, "hsl(0, 0%, 87%)"],
-            [12, "hsl(0, 2%, 88%)"]
+            [
+              7,
+              "rgba(224, 238, 230, 1)"
+            ],
+            [
+              11,
+              "rgba(222, 236, 226, 1)"
+            ],
+            [
+              12,
+              "rgba(214, 231, 214, 1)"
+            ]
           ]
         }
       },
@@ -1568,15 +1577,21 @@
       "paint": {
         "fill-color": {
           "stops": [
-            [13, "hsl(24, 19%, 84%)"],
-            [16, "hsl(26, 17%, 82%)"]
+            [
+              13,
+              "rgba(224, 168, 131, 1)"
+            ],
+            [
+              16,
+              "rgba(220, 175, 141, 1)"
+            ]
           ]
         },
         "fill-outline-color": {
           "base": 1,
           "stops": [
-            [13, "hsl(26, 7%, 57%)"],
-            [16, "hsl(26, 8%, 62%)"]
+            [13, "rgba(67, 44, 27, 1)"],
+            [16, "rgba(145, 98, 63, 1)"]
           ]
         }
       },
@@ -2035,7 +2050,7 @@
       "source-layer": "transportation",
       "minzoom": 13,
       "paint": {
-        "line-color": "rgba(255, 0, 0, 1)",
+        "line-color": "rgba(251, 21, 3, 1)",
         "line-dasharray": [2, 2],
         "line-width": {
           "base": 1.2,
@@ -5631,7 +5646,7 @@
       "source-layer": "transportation",
       "minzoom": 13,
       "paint": {
-        "line-color": "rgba(255, 0, 0, 1)",
+        "line-color": "hsl(240, 100%, 50%)",
         "line-dasharray": [2, 2],
         "line-width": {
           "base": 1.2,
