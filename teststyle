@@ -32,13 +32,8 @@
       "paint": {
         "raster-opacity": [
           "interpolate",
-          [
-            "exponential",
-            1.5
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.5],
+          ["zoom"],
           0,
           0.6,
           6,
@@ -64,10 +59,7 @@
       "source-layer": "park",
       "paint": {
         "line-color": "rgba(228, 241, 215, 1)",
-        "line-dasharray": [
-          1,
-          1.5
-        ]
+        "line-dasharray": [1, 1.5]
       }
     },
     {
@@ -78,21 +70,14 @@
       "maxzoom": 12,
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "residential"
       ],
       "paint": {
         "fill-color": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           9,
           "hsla(0,3%,85%,0.84)",
           12,
@@ -107,10 +92,7 @@
       "source-layer": "landcover",
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "wood"
       ],
       "paint": {
@@ -126,10 +108,7 @@
       "source-layer": "landcover",
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "grass"
       ],
       "paint": {
@@ -145,10 +124,7 @@
       "source-layer": "landcover",
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "ice"
       ],
       "paint": {
@@ -165,10 +141,7 @@
       "minzoom": 12,
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "wetland"
       ],
       "paint": {
@@ -185,15 +158,10 @@
       "source-layer": "landuse",
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "pitch"
       ],
-      "paint": {
-        "fill-color": "#DEE3CD"
-      }
+      "paint": {"fill-color": "#DEE3CD"}
     },
     {
       "id": "landuse_track",
@@ -202,15 +170,10 @@
       "source-layer": "landuse",
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "track"
       ],
-      "paint": {
-        "fill-color": "#DEE3CD"
-      }
+      "paint": {"fill-color": "#DEE3CD"}
     },
     {
       "id": "landuse_cemetery",
@@ -219,10 +182,7 @@
       "source-layer": "landuse",
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "cemetery"
       ],
       "paint": {
@@ -236,15 +196,10 @@
       "source-layer": "landuse",
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "hospital"
       ],
-      "paint": {
-        "fill-color": "#fde"
-      }
+      "paint": {"fill-color": "#fde"}
     },
     {
       "id": "landuse_school",
@@ -253,10 +208,7 @@
       "source-layer": "landuse",
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "school"
       ],
       "paint": {
@@ -270,26 +222,16 @@
       "source-layer": "waterway",
       "filter": [
         "==",
-        [
-          "get",
-          "brunnel"
-        ],
+        ["get", "brunnel"],
         "tunnel"
       ],
       "paint": {
         "line-color": "#a0c8f0",
-        "line-dasharray": [
-          3,
-          3
-        ],
+        "line-dasharray": [3, 3],
         "line-gap-width": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           12,
           0,
           20,
@@ -298,13 +240,8 @@
         "line-opacity": 1,
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           8,
           1,
           20,
@@ -321,35 +258,22 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "river"
         ],
         [
           "!=",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ]
       ],
-      "layout": {
-        "line-cap": "round"
-      },
+      "layout": {"line-cap": "round"},
       "paint": {
         "line-color": "#a0c8f0",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           11,
           0.5,
           20,
@@ -366,35 +290,22 @@
         "all",
         [
           "!=",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "river"
         ],
         [
           "!=",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ]
       ],
-      "layout": {
-        "line-cap": "round"
-      },
+      "layout": {"line-cap": "round"},
       "paint": {
         "line-color": "#a0c8f0",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.3
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.3],
+          ["zoom"],
           13,
           0.5,
           20,
@@ -409,10 +320,7 @@
       "source-layer": "water",
       "filter": [
         "!=",
-        [
-          "get",
-          "brunnel"
-        ],
+        ["get", "brunnel"],
         "tunnel"
       ],
       "paint": {
@@ -426,10 +334,7 @@
       "source-layer": "landcover",
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "sand"
       ],
       "paint": {
@@ -444,13 +349,8 @@
       "minzoom": 11,
       "filter": [
         "match",
-        [
-          "geometry-type"
-        ],
-        [
-          "MultiPolygon",
-          "Polygon"
-        ],
+        ["geometry-type"],
+        ["MultiPolygon", "Polygon"],
         true,
         false
       ],
@@ -469,9 +369,7 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -481,10 +379,7 @@
         ],
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "runway"
         ]
       ],
@@ -492,13 +387,8 @@
         "line-color": "#f0ede9",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           11,
           3,
           20,
@@ -516,9 +406,7 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -528,10 +416,7 @@
         ],
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "taxiway"
         ]
       ],
@@ -539,13 +424,8 @@
         "line-color": "#f0ede9",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           11,
           0.5,
           20,
@@ -562,47 +442,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
+        ["==", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
-        [
-          "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
-        "line-dasharray": [
-          0.5,
-          0.25
-        ],
+        "line-dasharray": [0.5, 0.25],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12,
           1,
           13,
@@ -623,44 +480,25 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "service",
-            "track"
-          ],
+          ["get", "class"],
+          ["service", "track"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#cfcdca",
-        "line-dasharray": [
-          0.5,
-          0.25
-        ],
+        "line-dasharray": [0.5, 0.25],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           15,
           1,
           16,
@@ -677,37 +515,20 @@
       "source-layer": "transportation",
       "filter": [
         "all",
+        ["==", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
-        [
-          "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12,
           1,
           13,
@@ -728,39 +549,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "street",
-            "street_limited"
-          ],
+          ["get", "class"],
+          ["street", "street_limited"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#cfcdca",
         "line-opacity": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           12,
           0,
           12.5,
@@ -768,13 +574,8 @@
         ],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12,
           0.5,
           13,
@@ -795,40 +596,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "secondary",
-            "tertiary"
-          ],
+          ["get", "class"],
+          ["secondary", "tertiary"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           8,
           1.5,
           20,
@@ -845,40 +630,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "primary",
-            "trunk"
-          ],
+          ["get", "class"],
+          ["primary", "trunk"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0.4,
           6,
@@ -899,47 +668,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
-        [
-          "!=",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
+        ["!=", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
-        "line-dasharray": [
-          0.5,
-          0.25
-        ],
+        "line-dasharray": [0.5, 0.25],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0.4,
           6,
@@ -960,9 +706,7 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -972,41 +716,24 @@
         ],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "path",
-            "pedestrian"
-          ],
+          ["get", "class"],
+          ["path", "pedestrian"],
           true,
           false
         ]
       ],
       "paint": {
         "line-color": "hsl(0,0%,100%)",
-        "line-dasharray": [
-          1,
-          0.75
-        ],
+        "line-dasharray": [1, 0.75],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           14,
           0.5,
           20,
@@ -1023,43 +750,23 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
+        ["==", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
-        [
-          "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fc8",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12.5,
           0,
           13,
@@ -1080,40 +787,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "service",
-            "track"
-          ],
+          ["get", "class"],
+          ["service", "track"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fff",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           15.5,
           0,
           16,
@@ -1130,37 +821,20 @@
       "source-layer": "transportation",
       "filter": [
         "all",
+        ["==", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
-        [
-          "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fff4c6",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12.5,
           0,
           13,
@@ -1181,39 +855,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "minor"
-          ],
+          ["get", "class"],
+          ["minor"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fff",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           13.5,
           0,
           14,
@@ -1232,40 +891,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "secondary",
-            "tertiary"
-          ],
+          ["get", "class"],
+          ["secondary", "tertiary"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fff4c6",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           6.5,
           0,
           7,
@@ -1284,40 +927,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "primary",
-            "trunk"
-          ],
+          ["get", "class"],
+          ["primary", "trunk"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fff4c6",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0,
           7,
@@ -1336,43 +963,23 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
-        [
-          "!=",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
+        ["!=", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#ffdaa6",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0,
           7,
@@ -1391,21 +998,13 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "rail"
-          ],
+          ["get", "class"],
+          ["rail"],
           true,
           false
         ]
@@ -1414,13 +1013,8 @@
         "line-color": "#bbb",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14,
           0.4,
           15,
@@ -1439,36 +1033,18 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
-        [
-          "==",
-          [
-            "get",
-            "class"
-          ],
-          "rail"
-        ]
+        ["==", ["get", "class"], "rail"]
       ],
       "paint": {
         "line-color": "#bbb",
-        "line-dasharray": [
-          0.2,
-          8
-        ],
+        "line-dasharray": [0.2, 8],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14.5,
           0,
           15,
@@ -1487,21 +1063,13 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "transit"
-          ],
+          ["get", "class"],
+          ["transit"],
           true,
           false
         ]
@@ -1510,13 +1078,8 @@
         "line-color": "#bbb",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14,
           0.4,
           15,
@@ -1535,36 +1098,22 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "tunnel"
         ],
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "transit"
         ]
       ],
       "paint": {
         "line-color": "#bbb",
-        "line-dasharray": [
-          0.2,
-          8
-        ],
+        "line-dasharray": [0.2, 8],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14.5,
           0,
           15,
@@ -1581,13 +1130,8 @@
       "source-layer": "transportation",
       "filter": [
         "match",
-        [
-          "geometry-type"
-        ],
-        [
-          "MultiPolygon",
-          "Polygon"
-        ],
+        ["geometry-type"],
+        ["MultiPolygon", "Polygon"],
         true,
         false
       ],
@@ -1605,33 +1149,17 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
-        [
-          "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ]
+        ["==", ["get", "ramp"], 1]
       ],
       "layout": {
         "line-cap": "round",
@@ -1641,13 +1169,8 @@
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12,
           1,
           13,
@@ -1668,27 +1191,15 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "service",
-            "track"
-          ],
+          ["get", "class"],
+          ["service", "track"],
           true,
           false
         ]
@@ -1701,13 +1212,8 @@
         "line-color": "#cfcdca",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           15,
           1,
           16,
@@ -1727,23 +1233,14 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           [
             "motorway",
             "path",
@@ -1754,14 +1251,7 @@
           false,
           true
         ],
-        [
-          "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ]
+        ["==", ["get", "ramp"], 1]
       ],
       "layout": {
         "line-cap": "round",
@@ -1771,13 +1261,8 @@
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12,
           1,
           13,
@@ -1798,9 +1283,7 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -1810,37 +1293,19 @@
         ],
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "minor"
-          ],
+          ["get", "class"],
+          ["minor"],
           true,
           false
         ],
-        [
-          "!=",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ]
+        ["!=", ["get", "ramp"], 1]
       ],
       "layout": {
         "line-cap": "round",
@@ -1850,12 +1315,8 @@
         "line-color": "#cfcdca",
         "line-opacity": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           12,
           0,
           12.5,
@@ -1863,13 +1324,8 @@
         ],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12,
           0.5,
           13,
@@ -1890,54 +1346,30 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "secondary",
-            "tertiary"
-          ],
+          ["get", "class"],
+          ["secondary", "tertiary"],
           true,
           false
         ],
-        [
-          "!=",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ]
+        ["!=", ["get", "ramp"], 1]
       ],
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "paint": {
-        "line-color": "#e9ac77",
+        "line-color": "rgba(237, 7, 58, 1)",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           8,
           1.5,
           20,
@@ -1954,45 +1386,26 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "primary",
-            "trunk"
-          ],
+          ["get", "class"],
+          ["primary", "trunk"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0.4,
           6,
@@ -2014,33 +1427,17 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
-        [
-          "!=",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ]
+        ["!=", ["get", "ramp"], 1]
       ],
       "layout": {
         "line-cap": "round",
@@ -2050,13 +1447,8 @@
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0.4,
           6,
@@ -2078,9 +1470,7 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -2090,49 +1480,27 @@
         ],
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "path",
-            "pedestrian"
-          ],
+          ["get", "class"],
+          ["path", "pedestrian"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "hsl(0,0%,100%)",
-        "line-dasharray": [
-          1,
-          0.7
-        ],
+        "line-dasharray": [1, 0.7],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           14,
           1,
           20,
@@ -2150,33 +1518,17 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
-        [
-          "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ]
+        ["==", ["get", "ramp"], 1]
       ],
       "layout": {
         "line-cap": "round",
@@ -2186,13 +1538,8 @@
         "line-color": "#fc8",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12.5,
           0,
           13,
@@ -2213,27 +1560,15 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "service",
-            "track"
-          ],
+          ["get", "class"],
+          ["service", "track"],
           true,
           false
         ]
@@ -2246,13 +1581,8 @@
         "line-color": "#fff",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           15.5,
           0,
           16,
@@ -2272,31 +1602,15 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
-        [
-          "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
+        ["==", ["get", "ramp"], 1],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           [
             "motorway",
             "path",
@@ -2316,13 +1630,8 @@
         "line-color": "#fea",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12.5,
           0,
           13,
@@ -2343,9 +1652,7 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -2355,26 +1662,15 @@
         ],
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "minor"
-          ],
+          ["get", "class"],
+          ["minor"],
           true,
           false
         ]
@@ -2387,13 +1683,8 @@
         "line-color": "#fff",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           13.5,
           0,
           14,
@@ -2412,27 +1703,15 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "secondary",
-            "tertiary"
-          ],
+          ["get", "class"],
+          ["secondary", "tertiary"],
           true,
           false
         ]
@@ -2445,13 +1724,8 @@
         "line-color": "#fea",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           6.5,
           0,
           8,
@@ -2470,45 +1744,26 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "primary",
-            "trunk"
-          ],
+          ["get", "class"],
+          ["primary", "trunk"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fea",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0,
           7,
@@ -2528,33 +1783,17 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
-        [
-          "!=",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ]
+        ["!=", ["get", "ramp"], 1]
       ],
       "layout": {
         "line-cap": "round",
@@ -2563,12 +1802,8 @@
       "paint": {
         "line-color": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           5,
           "hsl(26,87%,62%)",
           6,
@@ -2576,13 +1811,8 @@
         ],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0,
           7,
@@ -2601,37 +1831,19 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
-        [
-          "==",
-          [
-            "get",
-            "class"
-          ],
-          "rail"
-        ]
+        ["==", ["get", "class"], "rail"]
       ],
       "paint": {
         "line-color": "#bbb",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14,
           0.4,
           15,
@@ -2650,41 +1862,20 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
-        [
-          "==",
-          [
-            "get",
-            "class"
-          ],
-          "rail"
-        ]
+        ["==", ["get", "class"], "rail"]
       ],
       "paint": {
         "line-color": "#bbb",
-        "line-dasharray": [
-          0.2,
-          8
-        ],
+        "line-dasharray": [0.2, 8],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14.5,
           0,
           15,
@@ -2703,23 +1894,14 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "transit"
         ]
       ],
@@ -2727,13 +1909,8 @@
         "line-color": "#bbb",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14,
           0.4,
           15,
@@ -2752,41 +1929,24 @@
         "all",
         [
           "match",
-          [
-            "get",
-            "brunnel"
-          ],
-          [
-            "bridge",
-            "tunnel"
-          ],
+          ["get", "brunnel"],
+          ["bridge", "tunnel"],
           false,
           true
         ],
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "transit"
         ]
       ],
       "paint": {
         "line-color": "#bbb",
-        "line-dasharray": [
-          0.2,
-          8
-        ],
+        "line-dasharray": [0.2, 8],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14.5,
           0,
           15,
@@ -2804,10 +1964,7 @@
       "minzoom": 16,
       "filter": [
         "==",
-        [
-          "get",
-          "oneway"
-        ],
+        ["get", "oneway"],
         1
       ],
       "layout": {
@@ -2823,10 +1980,7 @@
       "minzoom": 16,
       "filter": [
         "==",
-        [
-          "get",
-          "oneway"
-        ],
+        ["get", "oneway"],
         -1
       ],
       "layout": {
@@ -2844,43 +1998,23 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
+        ["==", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
-        [
-          "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12,
           1,
           13,
@@ -2901,40 +2035,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "service",
-            "track"
-          ],
+          ["get", "class"],
+          ["service", "track"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#cfcdca",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           15,
           1,
           16,
@@ -2953,35 +2071,22 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "link"
         ],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12,
           1,
           13,
@@ -3002,39 +2107,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "street",
-            "street_limited"
-          ],
+          ["get", "class"],
+          ["street", "street_limited"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "hsl(36,6%,74%)",
         "line-opacity": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           12,
           0,
           12.5,
@@ -3042,13 +2132,8 @@
         ],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12,
           0.5,
           13,
@@ -3069,9 +2154,7 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -3081,41 +2164,24 @@
         ],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "path",
-            "pedestrian"
-          ],
+          ["get", "class"],
+          ["path", "pedestrian"],
           true,
           false
         ]
       ],
       "paint": {
         "line-color": "hsl(35,6%,80%)",
-        "line-dasharray": [
-          1,
-          0
-        ],
+        "line-dasharray": [1, 0],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           14,
           1.5,
           20,
@@ -3132,40 +2198,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "secondary",
-            "tertiary"
-          ],
+          ["get", "class"],
+          ["secondary", "tertiary"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           8,
           1.5,
           20,
@@ -3182,40 +2232,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "primary",
-            "trunk"
-          ],
+          ["get", "class"],
+          ["primary", "trunk"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0.4,
           6,
@@ -3236,43 +2270,23 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
-        [
-          "!=",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
+        ["!=", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#e9ac77",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0.4,
           6,
@@ -3293,9 +2307,7 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -3305,41 +2317,24 @@
         ],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "path",
-            "pedestrian"
-          ],
+          ["get", "class"],
+          ["path", "pedestrian"],
           true,
           false
         ]
       ],
       "paint": {
         "line-color": "hsl(0,0%,100%)",
-        "line-dasharray": [
-          1,
-          0.3
-        ],
+        "line-dasharray": [1, 0.3],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           14,
           0.5,
           20,
@@ -3356,43 +2351,23 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
+        ["==", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
-        [
-          "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fc8",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12.5,
           0,
           13,
@@ -3413,40 +2388,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "service",
-            "track"
-          ],
+          ["get", "class"],
+          ["service", "track"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fff",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           15.5,
           0,
           16,
@@ -3465,35 +2424,22 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "link"
         ],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fea",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           12.5,
           0,
           13,
@@ -3514,39 +2460,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "minor"
-          ],
+          ["get", "class"],
+          ["minor"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fff",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           13.5,
           0,
           14,
@@ -3565,40 +2496,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "secondary",
-            "tertiary"
-          ],
+          ["get", "class"],
+          ["secondary", "tertiary"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fea",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           6.5,
           0,
           7,
@@ -3617,40 +2532,24 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "primary",
-            "trunk"
-          ],
+          ["get", "class"],
+          ["primary", "trunk"],
           true,
           false
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fea",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0,
           7,
@@ -3669,43 +2568,23 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "motorway"
         ],
-        [
-          "!=",
-          [
-            "get",
-            "ramp"
-          ],
-          1
-        ],
+        ["!=", ["get", "ramp"], 1],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
-      "layout": {
-        "line-join": "round"
-      },
+      "layout": {"line-join": "round"},
       "paint": {
         "line-color": "#fc8",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           5,
           0,
           7,
@@ -3724,18 +2603,12 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "rail"
         ],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
@@ -3743,13 +2616,8 @@
         "line-color": "#bbb",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14,
           0.4,
           15,
@@ -3768,36 +2636,22 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "rail"
         ],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
       "paint": {
         "line-color": "#bbb",
-        "line-dasharray": [
-          0.2,
-          8
-        ],
+        "line-dasharray": [0.2, 8],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14.5,
           0,
           15,
@@ -3816,18 +2670,12 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "transit"
         ],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
@@ -3835,13 +2683,8 @@
         "line-color": "#bbb",
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14,
           0.4,
           15,
@@ -3860,36 +2703,22 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "transit"
         ],
         [
           "==",
-          [
-            "get",
-            "brunnel"
-          ],
+          ["get", "brunnel"],
           "bridge"
         ]
       ],
       "paint": {
         "line-color": "#bbb",
-        "line-dasharray": [
-          0.2,
-          8
-        ],
+        "line-dasharray": [0.2, 8],
         "line-width": [
           "interpolate",
-          [
-            "exponential",
-            1.4
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.4],
+          ["zoom"],
           14.5,
           0,
           15,
@@ -3910,12 +2739,8 @@
         "fill-color": "hsl(35,8%,85%)",
         "fill-outline-color": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           13,
           "hsla(35,6%,79%,0.32)",
           14,
@@ -3952,59 +2777,25 @@
         "all",
         [
           ">=",
-          [
-            "get",
-            "admin_level"
-          ],
+          ["get", "admin_level"],
           3
         ],
         [
           "<=",
-          [
-            "get",
-            "admin_level"
-          ],
+          ["get", "admin_level"],
           6
         ],
-        [
-          "!=",
-          [
-            "get",
-            "maritime"
-          ],
-          1
-        ],
-        [
-          "!=",
-          [
-            "get",
-            "disputed"
-          ],
-          1
-        ],
-        [
-          "!",
-          [
-            "has",
-            "claimed_by"
-          ]
-        ]
+        ["!=", ["get", "maritime"], 1],
+        ["!=", ["get", "disputed"], 1],
+        ["!", ["has", "claimed_by"]]
       ],
       "paint": {
         "line-color": "hsl(0,0%,70%)",
-        "line-dasharray": [
-          1,
-          1
-        ],
+        "line-dasharray": [1, 1],
         "line-width": [
           "interpolate",
-          [
-            "linear",
-            1
-          ],
-          [
-            "zoom"
-          ],
+          ["linear", 1],
+          ["zoom"],
           7,
           1,
           11,
@@ -4021,35 +2812,12 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "admin_level"
-          ],
+          ["get", "admin_level"],
           2
         ],
-        [
-          "!=",
-          [
-            "get",
-            "maritime"
-          ],
-          1
-        ],
-        [
-          "!=",
-          [
-            "get",
-            "disputed"
-          ],
-          1
-        ],
-        [
-          "!",
-          [
-            "has",
-            "claimed_by"
-          ]
-        ]
+        ["!=", ["get", "maritime"], 1],
+        ["!=", ["get", "disputed"], 1],
+        ["!", ["has", "claimed_by"]]
       ],
       "layout": {
         "line-cap": "round",
@@ -4059,12 +2827,8 @@
         "line-color": "hsl(248,1%,41%)",
         "line-opacity": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           0,
           0.4,
           4,
@@ -4072,12 +2836,8 @@
         ],
         "line-width": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           3,
           1,
           5,
@@ -4094,37 +2854,16 @@
       "source-layer": "boundary",
       "filter": [
         "all",
-        [
-          "!=",
-          [
-            "get",
-            "maritime"
-          ],
-          1
-        ],
-        [
-          "==",
-          [
-            "get",
-            "disputed"
-          ],
-          1
-        ]
+        ["!=", ["get", "maritime"], 1],
+        ["==", ["get", "disputed"], 1]
       ],
       "paint": {
         "line-color": "hsl(248,1%,41%)",
-        "line-dasharray": [
-          1,
-          2
-        ],
+        "line-dasharray": [1, 2],
         "line-width": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           3,
           1,
           5,
@@ -4142,9 +2881,7 @@
       "minzoom": 10,
       "filter": [
         "match",
-        [
-          "geometry-type"
-        ],
+        ["geometry-type"],
         [
           "LineString",
           "MultiLineString"
@@ -4157,32 +2894,17 @@
         "symbol-spacing": 350,
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             " ",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -4205,45 +2927,25 @@
       "source-layer": "water_name",
       "filter": [
         "match",
-        [
-          "geometry-type"
-        ],
-        [
-          "MultiPoint",
-          "Point"
-        ],
+        ["geometry-type"],
+        ["MultiPoint", "Point"],
         true,
         false
       ],
       "layout": {
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -4253,12 +2955,8 @@
         "text-max-width": 5,
         "text-size": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           0,
           10,
           8,
@@ -4278,9 +2976,7 @@
       "source-layer": "water_name",
       "filter": [
         "match",
-        [
-          "geometry-type"
-        ],
+        ["geometry-type"],
         [
           "LineString",
           "MultiLineString"
@@ -4293,32 +2989,17 @@
         "symbol-spacing": 350,
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             " ",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -4344,84 +3025,42 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
-          [
-            "MultiPoint",
-            "Point"
-          ],
+          ["geometry-type"],
+          ["MultiPoint", "Point"],
           true,
           false
         ],
-        [
-          ">=",
-          [
-            "get",
-            "rank"
-          ],
-          20
-        ]
+        [">=", ["get", "rank"], 20]
       ],
       "layout": {
         "icon-image": [
           "match",
-          [
-            "get",
-            "subclass"
-          ],
-          [
-            "florist",
-            "furniture"
-          ],
-          [
-            "get",
-            "subclass"
-          ],
-          [
-            "get",
-            "class"
-          ]
+          ["get", "subclass"],
+          ["florist", "furniture"],
+          ["get", "subclass"],
+          ["get", "class"]
         ],
         "text-anchor": "top",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
           "Noto Sans Italic"
         ],
         "text-max-width": 9,
-        "text-offset": [
-          0,
-          0.6
-        ],
+        "text-offset": [0, 0.6],
         "text-size": 12
       },
       "paint": {
@@ -4441,92 +3080,43 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
-          [
-            "MultiPoint",
-            "Point"
-          ],
+          ["geometry-type"],
+          ["MultiPoint", "Point"],
           true,
           false
         ],
-        [
-          ">=",
-          [
-            "get",
-            "rank"
-          ],
-          7
-        ],
-        [
-          "<",
-          [
-            "get",
-            "rank"
-          ],
-          20
-        ]
+        [">=", ["get", "rank"], 7],
+        ["<", ["get", "rank"], 20]
       ],
       "layout": {
         "icon-image": [
           "match",
-          [
-            "get",
-            "subclass"
-          ],
-          [
-            "florist",
-            "furniture"
-          ],
-          [
-            "get",
-            "subclass"
-          ],
-          [
-            "get",
-            "class"
-          ]
+          ["get", "subclass"],
+          ["florist", "furniture"],
+          ["get", "subclass"],
+          ["get", "class"]
         ],
         "text-anchor": "top",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
           "Noto Sans Italic"
         ],
         "text-max-width": 9,
-        "text-offset": [
-          0,
-          0.6
-        ],
+        "text-offset": [0, 0.6],
         "text-size": 12
       },
       "paint": {
@@ -4546,92 +3136,43 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
-          [
-            "MultiPoint",
-            "Point"
-          ],
+          ["geometry-type"],
+          ["MultiPoint", "Point"],
           true,
           false
         ],
-        [
-          ">=",
-          [
-            "get",
-            "rank"
-          ],
-          1
-        ],
-        [
-          "<",
-          [
-            "get",
-            "rank"
-          ],
-          7
-        ]
+        [">=", ["get", "rank"], 1],
+        ["<", ["get", "rank"], 7]
       ],
       "layout": {
         "icon-image": [
           "match",
-          [
-            "get",
-            "subclass"
-          ],
-          [
-            "florist",
-            "furniture"
-          ],
-          [
-            "get",
-            "subclass"
-          ],
-          [
-            "get",
-            "class"
-          ]
+          ["get", "subclass"],
+          ["florist", "furniture"],
+          ["get", "subclass"],
+          ["get", "class"]
         ],
         "text-anchor": "top",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
           "Noto Sans Italic"
         ],
         "text-max-width": 9,
-        "text-offset": [
-          0,
-          0.6
-        ],
+        "text-offset": [0, 0.6],
         "text-size": 12
       },
       "paint": {
@@ -4648,66 +3189,38 @@
       "source-layer": "poi",
       "filter": [
         "match",
-        [
-          "get",
-          "class"
-        ],
-        [
-          "airport",
-          "bus",
-          "rail"
-        ],
+        ["get", "class"],
+        ["airport", "bus", "rail"],
         true,
         false
       ],
       "layout": {
         "icon-image": [
           "to-string",
-          [
-            "get",
-            "class"
-          ]
+          ["get", "class"]
         ],
         "icon-size": 0.7,
         "text-anchor": "left",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
           "Noto Sans Italic"
         ],
         "text-max-width": 9,
-        "text-offset": [
-          0.9,
-          0
-        ],
+        "text-offset": [0.9, 0],
         "text-size": 12
       },
       "paint": {
@@ -4725,42 +3238,24 @@
       "minzoom": 15.5,
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "path"
       ],
       "layout": {
         "symbol-placement": "line",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             " ",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -4769,12 +3264,8 @@
         "text-rotation-alignment": "map",
         "text-size": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           13,
           12,
           14,
@@ -4797,9 +3288,7 @@
         "all",
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -4809,15 +3298,8 @@
         ],
         [
           "match",
-          [
-            "get",
-            "class"
-          ],
-          [
-            "minor",
-            "service",
-            "track"
-          ],
+          ["get", "class"],
+          ["minor", "service", "track"],
           true,
           false
         ]
@@ -4826,32 +3308,17 @@
         "symbol-placement": "line",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             " ",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -4860,12 +3327,8 @@
         "text-rotation-alignment": "map",
         "text-size": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           13,
           12,
           14,
@@ -4886,10 +3349,7 @@
       "minzoom": 12.2,
       "filter": [
         "match",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         [
           "primary",
           "secondary",
@@ -4903,32 +3363,17 @@
         "symbol-placement": "line",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             " ",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -4937,12 +3382,8 @@
         "text-rotation-alignment": "map",
         "text-size": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           13,
           12,
           14,
@@ -4965,17 +3406,12 @@
         "all",
         [
           "<=",
-          [
-            "get",
-            "ref_length"
-          ],
+          ["get", "ref_length"],
           6
         ],
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -4985,10 +3421,7 @@
         ],
         [
           "match",
-          [
-            "get",
-            "network"
-          ],
+          ["get", "network"],
           [
             "us-highway",
             "us-interstate",
@@ -5002,18 +3435,13 @@
         "icon-image": [
           "concat",
           "road_",
-          [
-            "get",
-            "ref_length"
-          ]
+          ["get", "ref_length"]
         ],
         "icon-rotation-alignment": "viewport",
         "icon-size": 1,
         "symbol-placement": [
           "step",
-          [
-            "zoom"
-          ],
+          ["zoom"],
           "point",
           11,
           "line"
@@ -5021,10 +3449,7 @@
         "symbol-spacing": 200,
         "text-field": [
           "to-string",
-          [
-            "get",
-            "ref"
-          ]
+          ["get", "ref"]
         ],
         "text-font": [
           "Noto Sans Regular"
@@ -5043,17 +3468,12 @@
         "all",
         [
           "<=",
-          [
-            "get",
-            "ref_length"
-          ],
+          ["get", "ref_length"],
           6
         ],
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -5063,13 +3483,8 @@
         ],
         [
           "match",
-          [
-            "get",
-            "network"
-          ],
-          [
-            "us-interstate"
-          ],
+          ["get", "network"],
+          ["us-interstate"],
           true,
           false
         ]
@@ -5077,23 +3492,15 @@
       "layout": {
         "icon-image": [
           "concat",
-          [
-            "get",
-            "network"
-          ],
+          ["get", "network"],
           "_",
-          [
-            "get",
-            "ref_length"
-          ]
+          ["get", "ref_length"]
         ],
         "icon-rotation-alignment": "viewport",
         "icon-size": 1,
         "symbol-placement": [
           "step",
-          [
-            "zoom"
-          ],
+          ["zoom"],
           "point",
           7,
           "line",
@@ -5103,10 +3510,7 @@
         "symbol-spacing": 200,
         "text-field": [
           "to-string",
-          [
-            "get",
-            "ref"
-          ]
+          ["get", "ref"]
         ],
         "text-font": [
           "Noto Sans Regular"
@@ -5125,17 +3529,12 @@
         "all",
         [
           "<=",
-          [
-            "get",
-            "ref_length"
-          ],
+          ["get", "ref_length"],
           6
         ],
         [
           "match",
-          [
-            "geometry-type"
-          ],
+          ["geometry-type"],
           [
             "LineString",
             "MultiLineString"
@@ -5145,14 +3544,8 @@
         ],
         [
           "match",
-          [
-            "get",
-            "network"
-          ],
-          [
-            "us-highway",
-            "us-state"
-          ],
+          ["get", "network"],
+          ["us-highway", "us-state"],
           true,
           false
         ]
@@ -5160,23 +3553,15 @@
       "layout": {
         "icon-image": [
           "concat",
-          [
-            "get",
-            "network"
-          ],
+          ["get", "network"],
           "_",
-          [
-            "get",
-            "ref_length"
-          ]
+          ["get", "ref_length"]
         ],
         "icon-rotation-alignment": "viewport",
         "icon-size": 1,
         "symbol-placement": [
           "step",
-          [
-            "zoom"
-          ],
+          ["zoom"],
           "point",
           11,
           "line"
@@ -5184,10 +3569,7 @@
         "symbol-spacing": 200,
         "text-field": [
           "to-string",
-          [
-            "get",
-            "ref"
-          ]
+          ["get", "ref"]
         ],
         "text-font": [
           "Noto Sans Regular"
@@ -5204,10 +3586,7 @@
       "minzoom": 10,
       "filter": [
         "all",
-        [
-          "has",
-          "iata"
-        ]
+        ["has", "iata"]
       ],
       "layout": {
         "icon-image": "airport_11",
@@ -5215,42 +3594,24 @@
         "text-anchor": "top",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
           "Noto Sans Regular"
         ],
         "text-max-width": 9,
-        "text-offset": [
-          0,
-          0.6
-        ],
+        "text-offset": [0, 0.6],
         "text-optional": true,
         "text-padding": 2,
         "text-size": 12
@@ -5270,10 +3631,7 @@
       "minzoom": 8,
       "filter": [
         "match",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         [
           "city",
           "continent",
@@ -5288,32 +3646,17 @@
       "layout": {
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -5323,12 +3666,8 @@
         "text-max-width": 9,
         "text-size": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           8,
           9,
           12,
@@ -5351,19 +3690,14 @@
       "minzoom": 9,
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "village"
       ],
       "layout": {
         "icon-allow-overlap": true,
         "icon-image": [
           "step",
-          [
-            "zoom"
-          ],
+          ["zoom"],
           "circle_11_black",
           10,
           ""
@@ -5373,32 +3707,17 @@
         "text-anchor": "bottom",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -5407,13 +3726,8 @@
         "text-max-width": 8,
         "text-size": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           7,
           10,
           11,
@@ -5435,19 +3749,14 @@
       "minzoom": 6,
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "town"
       ],
       "layout": {
         "icon-allow-overlap": true,
         "icon-image": [
           "step",
-          [
-            "zoom"
-          ],
+          ["zoom"],
           "circle_11_black",
           10,
           ""
@@ -5457,32 +3766,17 @@
         "text-anchor": "bottom",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -5491,13 +3785,8 @@
         "text-max-width": 8,
         "text-size": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           7,
           12,
           11,
@@ -5520,41 +3809,23 @@
       "maxzoom": 8,
       "filter": [
         "==",
-        [
-          "get",
-          "class"
-        ],
+        ["get", "class"],
         "state"
       ],
       "layout": {
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
@@ -5564,12 +3835,8 @@
         "text-max-width": 9,
         "text-size": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           5,
           10,
           8,
@@ -5594,28 +3861,16 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "city"
         ],
-        [
-          "!=",
-          [
-            "get",
-            "capital"
-          ],
-          2
-        ]
+        ["!=", ["get", "capital"], 2]
       ],
       "layout": {
         "icon-allow-overlap": true,
         "icon-image": [
           "step",
-          [
-            "zoom"
-          ],
+          ["zoom"],
           "circle_11_black",
           9,
           ""
@@ -5625,51 +3880,28 @@
         "text-anchor": "bottom",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
         "text-font": [
           "Noto Sans Regular"
         ],
         "text-max-width": 8,
-        "text-offset": [
-          0,
-          -0.1
-        ],
+        "text-offset": [0, -0.1],
         "text-size": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           4,
           11,
           7,
@@ -5695,28 +3927,16 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "city"
         ],
-        [
-          "==",
-          [
-            "get",
-            "capital"
-          ],
-          2
-        ]
+        ["==", ["get", "capital"], 2]
       ],
       "layout": {
         "icon-allow-overlap": true,
         "icon-image": [
           "step",
-          [
-            "zoom"
-          ],
+          ["zoom"],
           "circle_11_black",
           9,
           ""
@@ -5726,51 +3946,26 @@
         "text-anchor": "bottom",
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
-        "text-font": [
-          "Noto Sans Bold"
-        ],
+        "text-font": ["Noto Sans Bold"],
         "text-max-width": 8,
-        "text-offset": [
-          0,
-          -0.2
-        ],
+        "text-offset": [0, -0.2],
         "text-size": [
           "interpolate",
-          [
-            "exponential",
-            1.2
-          ],
-          [
-            "zoom"
-          ],
+          ["exponential", 1.2],
+          ["zoom"],
           4,
           12,
           7,
@@ -5797,64 +3992,33 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "country"
         ],
-        [
-          ">=",
-          [
-            "get",
-            "rank"
-          ],
-          3
-        ]
+        [">=", ["get", "rank"], 3]
       ],
       "layout": {
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
-        "text-font": [
-          "Noto Sans Bold"
-        ],
+        "text-font": ["Noto Sans Bold"],
         "text-max-width": 6.25,
         "text-size": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           3,
           9,
           7,
@@ -5878,64 +4042,33 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "country"
         ],
-        [
-          "==",
-          [
-            "get",
-            "rank"
-          ],
-          2
-        ]
+        ["==", ["get", "rank"], 2]
       ],
       "layout": {
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
-        "text-font": [
-          "Noto Sans Bold"
-        ],
+        "text-font": ["Noto Sans Bold"],
         "text-max-width": 6.25,
         "text-size": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           2,
           9,
           5,
@@ -5959,64 +4092,33 @@
         "all",
         [
           "==",
-          [
-            "get",
-            "class"
-          ],
+          ["get", "class"],
           "country"
         ],
-        [
-          "==",
-          [
-            "get",
-            "rank"
-          ],
-          1
-        ]
+        ["==", ["get", "rank"], 1]
       ],
       "layout": {
         "text-field": [
           "case",
-          [
-            "has",
-            "name:nonlatin"
-          ],
+          ["has", "name:nonlatin"],
           [
             "concat",
-            [
-              "get",
-              "name:latin"
-            ],
+            ["get", "name:latin"],
             "\n",
-            [
-              "get",
-              "name:nonlatin"
-            ]
+            ["get", "name:nonlatin"]
           ],
           [
             "coalesce",
-            [
-              "get",
-              "name_en"
-            ],
-            [
-              "get",
-              "name"
-            ]
+            ["get", "name_en"],
+            ["get", "name"]
           ]
         ],
-        "text-font": [
-          "Noto Sans Bold"
-        ],
+        "text-font": ["Noto Sans Bold"],
         "text-max-width": 6.25,
         "text-size": [
           "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
+          ["linear"],
+          ["zoom"],
           1,
           9,
           4,
@@ -6030,5 +4132,9 @@
         "text-halo-width": 1
       }
     }
-  ]
+  ],
+  "id": "az6hr3t",
+  "metadata": {
+    "maputnik:renderer": "mlgljs"
+  }
 }
